@@ -14,10 +14,14 @@
   --accent-secondary: #6fc02c;
   --accent-hover: #1e3f7f;
   --font-color-secondary: #d1d1d1;
+  --accent-dark: #101010;
+  --accent-light: #244d9f;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap');
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   color: #444444;
 }
 
@@ -37,7 +41,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Share Tech Mono', monospace;
 }
 
 /*--------------------------------------------------------------
@@ -71,6 +75,36 @@ h6 {
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
+}
+
+#landing {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background-image: url('../img/slide/slide-1.png'); */
+  background-color: var(--accent-dark);
+  background-blend-mode: multiply;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.landing-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.landing-container h1 {
+  font-size: 6rem;
+}
+
+.landing-container p {
+  font-size: 1.76rem;
 }
 
 /*--------------------------------------------------------------
@@ -134,7 +168,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 0 4px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   font-size: 14px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.7);
@@ -185,7 +219,7 @@ h6 {
   border-radius: 4px;
   color: #fff;
   font-weight: 400;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   border: 2px solid var(--accent);
 }
 
@@ -522,8 +556,8 @@ h6 {
   background: var(--accent);
 }
 
-#hero .btn-get-started {
-  font-family: "Roboto", sans-serif;
+.btn-get-started {
+  font-family: 'Share Tech Mono', monospace;
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 1px;
@@ -541,7 +575,7 @@ h6 {
   background: var(--accent);
 }
 
-#hero .btn-get-started:hover {
+.btn-get-started:hover {
   background: #6ab82a;
   border-color: #6ab82a;
   color: #fff;
@@ -572,7 +606,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f1f1f1;
+  background-color: var(--accent-dark);
 }
 
 .section-title {
@@ -586,18 +620,19 @@ section {
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: var(--accent);
+  color: white;
 }
 
 .section-title p {
   margin-bottom: 0;
+  color: white;
 }
 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .about {
-  background-color: black;
+  background-color: var(--accent-dark);
   color: #fff;
 }
 
@@ -637,7 +672,7 @@ section {
 }
 
 .about .image {
-  background: url("../img/about.jpg") center center no-repeat;
+  background: url("../img/about.png") center center no-repeat;
   background-size: cover;
   min-height: 400px;
 }
@@ -663,7 +698,7 @@ section {
 --------------------------------------------------------------*/
 .counts {
   padding: 0 0 30px 0;
-  background-color: black;
+  background-color: var(--accent-dark);
 }
 
 .counts .count-box {
@@ -691,7 +726,7 @@ section {
 .counts .count-box p {
   padding: 15px 0 0 0;
   margin: 0 0 0 60px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   font-size: 14px;
   color: var(--font-color-secondary);
 }
@@ -702,7 +737,7 @@ section {
   margin-top: 20px;
   color: #505050;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   transition: ease-in-out 0.3s;
 }
 
@@ -716,6 +751,7 @@ section {
 .sponsors {
   padding: 15px 0;
   text-align: center;
+  background-color: #f1f1f1;
 }
 
 .sponsors img {
@@ -806,7 +842,7 @@ section {
 # speakers
 --------------------------------------------------------------*/
 .speakers {
-  background: #fff;
+  background: var(--accent-dark);
   padding: 60px 0;
 }
 
@@ -878,6 +914,13 @@ section {
   margin: 0 2px;
 }
 
+.member img {
+  border-radius: 10px;
+    border-width: 4px;
+    border-color: white;
+    border-style: solid;
+}
+
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
@@ -903,7 +946,7 @@ section {
   font-size: 42px;
   color: var(--accent);
   font-weight: 500;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   margin-bottom: 20px;
 }
 
@@ -956,7 +999,7 @@ section {
   color: var(--accent);
   font-size: 14px;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   font-weight: 600;
   transition: 0.3s;
 }
@@ -1412,4 +1455,36 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+#clock {
+  font-family: 'Share Tech Mono', monospace;
+  color: #ffffff;
+  text-align: center;
+  color: #daf6ff;
+  text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+}
+
+.time {
+  letter-spacing: 0.05em;
+  font-size: 80px;
+  padding: 5px 0;
+}
+.date {
+  letter-spacing: 0.1em;
+  font-size: 24px;
+}
+.text {
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  padding: 20px 0 0;
+}
+
+.carousel-content p {
+  font-size: 1.5rem;
+}
+
+.carousel-content h2 {
+  font-size: 3rem;
+  font-weight: 700;
 }
