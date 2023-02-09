@@ -81,7 +81,7 @@ h6 {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
   /* background-image: url('../img/slide/slide-1.png'); */
@@ -105,6 +105,20 @@ h6 {
 
 .landing-container p {
   font-size: 1.76rem;
+}
+
+#landing-window {
+    width: 100%;
+    align-items: center;
+    /* margin-top: ; */
+}
+
+#landing-window img{
+    border: 4px solid white;
+    border-radius: 2rem;
+    align-self: center;
+    width: 15vw;
+    hight: 15vw;
 }
 
 /*--------------------------------------------------------------
@@ -352,7 +366,7 @@ h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: var(--accent-dark);
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -361,7 +375,7 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #2a2a2a;
+  color: white;
 }
 
 .navbar-mobile a:hover,
@@ -639,7 +653,6 @@ section {
   background-color: var(--accent-dark);
   color: #fff;
   padding: 1rem;
-  max-height: 100vh;
 }
 
 .about .content {
