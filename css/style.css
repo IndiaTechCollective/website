@@ -1525,7 +1525,7 @@ section {
   --color: hsl(0, 0%, 100%);
   --font-size: 1.5em;
   --shadow-primary-hue: 297;
-  --label-size: 9px;
+  --label-size: 0.5em;
   --shadow-secondary-hue: 60;
   --shadow-secondary: hsl(var(--shadow-secondary-hue), 90%, 60%);
   --clip: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 70%);
@@ -1556,12 +1556,14 @@ section {
   margin-top: 2rem;
  }
 
- /* @media(max-width:786px){ */
- /*     .cybr-btn{ */
- /* 	 min-width: 150px; */
- /* 	 height: 75/2px; */
- /*     } */
- /* } */
+ @media(max-width:786px){
+     .cybr-btn{
+	 min-width: 150px;
+	 height: 75/2px;
+	 --label-size: 0;
+
+     }
+ }
 
 .cybr-btn:hover {
   --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.8%));
