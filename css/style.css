@@ -20,8 +20,29 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap');
 
+@font-face {
+  font-family: 'Rajdhani';
+  font-weight: normal;
+  src: url('../fonts/Rajdhani/Rajdhani-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  font-weight: bold;
+  src: url('../fonts/Rajdhani/Rajdhani-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Mona Sans';
+  src:
+    url('../fonts/MonaSans/MonaSans.woff2') format('woff2 supports variations'),
+    url('../fonts/MonaSans/MonaSans.woff2') format('woff2-variations');
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+
 body {
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'Mona Sans', monospace;
   color: #444444;
 }
 
@@ -41,7 +62,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'Rajdhani', monospace;
 }
 
 /*--------------------------------------------------------------
@@ -95,7 +116,7 @@ h6 {
 }
 
 .landing-container h1 {
-  font-size: 6rem;
+  font-size: 9rem;
 }
 
 .landing-container p {
@@ -428,8 +449,7 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
-  background-color: rgba(17, 17, 17, 0.8);
+  background-color: var(--accent-dark);
   overflow: hidden;
   padding: 0;
 }
@@ -486,7 +506,6 @@ h6 {
   width: 80%;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
-  margin: 0 auto 30px auto;
   color: #fff;
 }
 
@@ -640,15 +659,6 @@ section {
   background-color: var(--accent-dark);
   color: #fff;
   padding: 1rem;
-}
-
-.about .content {
-  padding: 30px 0;
-}
-
-.about .content h3 {
-  font-weight: 700;
-  font-size: 34px;
 }
 
 .about .content p {
@@ -1766,4 +1776,12 @@ section {
 	background-position: 0 0;
 	filter:hue-rotate(360deg);
 	}
+}
+
+.line-content-container h1 {
+  font-size: 5rem;
+}
+
+.line-content-container p {
+  font-size: 2rem;
 }
