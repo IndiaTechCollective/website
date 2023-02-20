@@ -42,8 +42,8 @@
       </nav>
     </div>
   </header>
-  <section id="landing">
-    <div class="landing-container">
+  <section id="hero">
+    <div class="hero-container">
       <h1 class="animate__animated animate__fadeInDown">NammaHax</h1>
       <p class="animate__animated animate__fadeInUp">Making Hackathons cool again</p>
       <div>
@@ -53,18 +53,15 @@
         </button>
       </div>
     </div>
-    <!-- <div id="landing-window">
-      <div class="landing-container">
-        <div class="landing-page-glitch-image"></div>
-      </div>
-    </div> -->
   </section>
-  <section id="hero" class="px-3">
-    <div
-      class="hero-container position-relative pt-3 pt-md-8 pt-lg-12 container-xl js-build-in-trigger build-in-animate">
+  <section id="sub-hero" class="px-3" style="margin-top: -30vh;">
+    <div class="position-relative pt-3 pt-md-8 pt-lg-12 container-xl js-build-in-trigger build-in-animate">
       <div class="d-flex" style="color: white">
         <div class="col-1 d-flex flex-column events-none position-relative">
-          <img src="./img/lines-hero.svg" width="437" height="637" class="lines-hero" />
+          <!-- <img src="./img/lines-hero.svg" class="lines-hero" /> -->
+          <div
+            style="background: linear-gradient(#d2a8ff, #a371f7 10%, #8642fa 70%, #d2a8ff); height: 100%; margin-left: 10px; width: 3px;"
+            class="home-campaign-git-line rounded"></div>
         </div>
         <div class="col-11 text-left line-content-container"
           style="padding-top: 128px; margin-top: 128px; padding-left: 8px;">
@@ -156,16 +153,22 @@
     </div>
   </section>
   <main id="main">
-    <section id="about" class="about">
+    <section id="about" class="about py-4">
       <div class="container">
+        <div class="row no-gutter">
+          <div class="d-flex align-items-stretch">
+            <div class="content d-flex flex-column justify-content-center">
+              <h3 class="about-us-header">About Us</h3>
+            </div>
+          </div>
+        </div>
         <div class="row no-gutter">
           <!-- <div class="col-md-5 d-flex align-items-stretch justify-content-center justify-content-lg-start">
             <img src="./img/about.png" />
           </div> -->
           <div class="col-md-9 d-flex align-items-stretch">
             <div class="content d-flex flex-column justify-content-center">
-              <h3 style="font-size: 5rem;">About Us</h3>
-              <p style="font-size: 2rem;">
+              <p class="about-us-content">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis justo nec tellus tincidunt, eu
                 hendrerit tortor ullamcorper. Integer ut mattis orci. Donec arcu est, blandit auctor dolor in, rhoncus
                 maximus magna. Vestibulum pulvinar aliquam venenatis. Nunc sollicitudin laoreet rutrum.
@@ -180,25 +183,27 @@
               </div> -->
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 dates">
             <div class="icon-box">
               <h3><i class="bx bx-receipt"></i> Date</h4>
-                <p>TBD</p>
+                <h1>31st July 2023</h1>
             </div>
             <div class="icon-box">
               <h3><i class="bx bx-cube-alt"></i> Venue</h4>
-                <p>TBD</p>
+                <h1>Leela Kempemsky Hotel</h1>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="counts" class="counts">
-      <div class="container">
+    <section id="counts" class="counts py-5">
+      <div class="container" style="background-color: #161b22;
+      border-radius: 8px;
+      border: 1px solid #30363d !important;">
         <div class="row no-gutters">
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
-              <i class="bi bi-people"></i>
+              <i class="bi bi-people" style="color: #8642fa;"></i>
               <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1"
                 class="purecounter"></span>
               <p><strong>Teams</strong></p>
@@ -206,7 +211,7 @@
           </div>
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
-              <i class="bi bi-hourglass-bottom"></i>
+              <i class="bi bi-hourglass-bottom" style="color: #56d364;"></i>
               <span data-purecounter-start="0" data-purecounter-end="36" data-purecounter-duration="1"
                 class="purecounter"></span>
               <p><strong>Hours</strong></p>
@@ -214,7 +219,7 @@
           </div>
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
-              <i class="bi bi-cup-hot-fill"></i>
+              <i class="bi bi-cup-hot-fill" style="color: #56d364;"></i>
               <div style="display:flex">
                 <span style="margin-left:10px" data-purecounter-start="0" data-purecounter-end="1000"
                   data-purecounter-duration="1" class="purecounter"></span><span
@@ -225,7 +230,7 @@
           </div>
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
-              <i class="bi bi-trophy-fill"></i>
+              <i class="bi bi-trophy-fill" style="    color: #ec6547;"></i>
               <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1"
                 class="purecounter"></span>
               <p><strong>Lakhs</strong></p>
