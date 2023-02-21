@@ -34,6 +34,12 @@
   font-stretch: 75% 125%;
 }
 
+@font-face {
+  font-family: 'Nippo';
+  font-weight: normal;
+  src: url('../fonts/Nippo/Nippo-Regular.otf') format('opentype');
+}
+
 body {
   font-family: 'Mona Sans', monospace;
   color: #444444;
@@ -55,7 +61,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Rajdhani', monospace;
+  font-family: 'Nippo';
 }
 
 /*--------------------------------------------------------------
@@ -1651,13 +1657,13 @@ section {
   background: var(--shadow-primary);
   text-shadow: 2px 2px var(--shadow-primary), -2px -2px var(--shadow-secondary);
   clip-path: var(--clip);
-  animation: glitch 2s infinite;
-  display: none;
-}
-
-.cybr-btn:hover .cybr-btn__glitch {
+  animation: glitch 5s infinite;
   display: block;
 }
+
+/* .cybr-btn:hover .cybr-btn__glitch {
+  display: block;
+} */
 
 .cybr-btn__glitch:before {
   content: '';
