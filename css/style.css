@@ -804,7 +804,7 @@ section {
 .sponsors {
   padding: 15px 0;
   text-align: center;
-  background-color: #f1f1f1;
+  color: white;
 }
 
 .sponsors img {
@@ -812,7 +812,6 @@ section {
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 15px 0;
-  filter: grayscale(100);
 }
 
 .sponsors img:hover {
@@ -901,9 +900,13 @@ section {
 
 .speakers .member {
   text-align: center;
-  margin-bottom: 20px;
-  background: #343a40;
+  background: #343a407d;
   position: relative;
+  height: 300px;
+  background-size: contain;
+  background-blend-mode: multiply;
+  background-position: center;
+  border-radius: 10px;
 }
 
 .speakers .member .member-info {
@@ -1867,3 +1870,43 @@ section {
     padding-right: 2rem;
   }
 }
+
+.sponsors-header h1 {
+  font-size: 5rem;
+}
+
+@media (max-width: 991px) {
+  .sponsors-header h1 {
+    font-size: 3rem;
+  }
+}
+
+.member-container {
+  margin-bottom: 20px;
+  border: 1px solid black;
+}
+
+.speaker-header h1 {
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .speaker-header h1 {
+    font-size: 3rem;
+  }
+}
+
+.faq-header h1 {
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .faq-header h1 {
+    font-size: 3rem;
+  }
+}
+
