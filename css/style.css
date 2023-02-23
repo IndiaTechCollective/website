@@ -34,11 +34,11 @@
   font-stretch: 75% 125%;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Nippo';
   font-weight: normal;
   src: url('../fonts/Nippo/Nippo-Regular.otf') format('opentype');
-}
+} */
 
 body {
   font-family: 'Mona Sans', monospace;
@@ -61,7 +61,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Nippo';
+  font-family: 'Rajdhani', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -900,7 +900,7 @@ section {
 
 .speakers .member {
   text-align: center;
-  background: #343a407d;
+  /* background: #343a407d; */
   position: relative;
   height: 300px;
   background-size: contain;
@@ -928,7 +928,9 @@ section {
 }
 
 .speakers .member:hover .member-info {
-  background: rgba(0, 0, 0, 0.7);
+  /* background: rgba(0, 0, 0, 0.5); */
+  backdrop-filter: blur(5px) grayscale(1);
+  /* filter: saturate(0%); */
   opacity: 1;
   transition: 0.4s;
 }
