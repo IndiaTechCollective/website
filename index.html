@@ -43,7 +43,7 @@
     </div>
   </header>
   <section id="hero">
-    <div class="hero-container">
+    <div class="hero-container" style="z-index: 1;">
       <h1 class="animate__animated animate__fadeInDown">NammaHax</h1>
       <p class="animate__animated animate__fadeInUp">Making Hackathons cool again</p>
       <div>
@@ -53,15 +53,29 @@
         </button>
       </div>
     </div>
+    <video class="hero__video" preload="auto" muted="" autoplay="" loop="" poster="img/hero_video.jpg">
+      <source src="./img/background.mp4" type="video/mp4">
+    </video>
   </section>
-  <section id="sub-hero" class="px-3" style="margin-top: -30vh;">
+  <section id="sub-hero" class="px-3" style="margin-top: -30vh; z-index: 2;">
     <div class="position-relative pt-3 pt-md-8 pt-lg-12 container-xl js-build-in-trigger build-in-animate">
       <div class="d-flex" style="color: white">
         <div class="col-1 d-flex flex-column events-none position-relative">
           <!-- <img src="./img/lines-hero.svg" class="lines-hero" /> -->
-          <img src="./img/bulb.svg" style="width: 100%;" />
+          <div class="my-3 home-campaign-glowing-icon">
+            <div class="position-relative d-inline-block" style="z-index: 2;">
+              <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24"
+                data-view-component="true">
+                <path fill-rule="evenodd" fill="white"
+                  d="M8.78 4.97a.75.75 0 010 1.06L2.81 12l5.97 5.97a.75.75 0 11-1.06 1.06l-6.5-6.5a.75.75 0 010-1.06l6.5-6.5a.75.75 0 011.06 0zm6.44 0a.75.75 0 000 1.06L21.19 12l-5.97 5.97a.75.75 0 101.06 1.06l6.5-6.5a.75.75 0 000-1.06l-6.5-6.5a.75.75 0 00-1.06 0z">
+                </path>
+              </svg>
+              <span class="position-absolute left-0 top-0 height-full width-full home-campaign-glowing-icon-glow z-n1"
+                style="background-color: #f7ef7d; filter: blur(17px); height: 100%; width: 100%; top: 0; left: 0; z-index: 2;"></span>
+            </div>
+          </div>
           <div
-            style="background: linear-gradient(#d2a8ff, #a371f7 10%, #8642fa 70%, #d2a8ff); height: 100%; margin-left: 10px; width: 3px;"
+            style="background: linear-gradient(#f7ef7d, #a371f7 10%, #8642fa 70%, #d2a8ff); height: 100%; margin-left: 10px; width: 3px; z-index: 2;"
             class="home-campaign-git-line rounded"></div>
         </div>
         <div class="col-11 text-left line-content-container"
@@ -164,9 +178,6 @@
           </div>
         </div>
         <div class="row no-gutter">
-          <!-- <div class="col-md-5 d-flex align-items-stretch justify-content-center justify-content-lg-start">
-            <img src="./img/about.png" />
-          </div> -->
           <div class="col-md-9 d-flex align-items-stretch">
             <div class="content d-flex flex-column justify-content-center">
               <p class="about-us-content">
@@ -184,35 +195,39 @@
               </div> -->
             </div>
           </div>
-          <!-- <div class="col-md-3 dates">
-            <div class="icon-box">
-              <h3><i class="bx bx-receipt"></i> Date</h4>
-                <h1>31st July 2023</h1>
-            </div>
-            <div class="icon-box">
-              <h3><i class="bx bx-cube-alt"></i> Venue</h4>
-                <h1>Leela Kempemsky Hotel</h1>
-            </div>
-          </div> -->
         </div>
-        <div class="row no-gutter mt-5">
-          <div class="d-flex align-items-stretch">
-            <div class="content d-flex flex-column justify-content-center">
-              <h3 class="about-us-header">Be There!</h3>
-            </div>
+      </div>
+    </section>
+    <section style="background-image: url(img/pl_strip.jpg);
+    background-color: #10101082;
+    background-blend-mode: multiply;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;">
+      <marquee behavior="scroll" direction="left" scrollamount="20">
+        <div class="d-flex align-items-stretch">
+          <div class="content d-flex flex-row justify-content-center">
+            <h3 class="about-us-header" style="color: white;margin-right: 5%;"><em>Be There!</em></h3>
+            <h3 class="about-us-header" style="color: white;margin-right: 5%;"><em>31st July 2023</em></h3>
+            <h3 class="about-us-header" style="color: white;"><em>Leela Kempemsky Hotel</em></h3>
           </div>
         </div>
+      </marquee>
+    </section>
+    <section id="be-there" class="about py-4 pt-5">
+      <div class="container">
         <div class="row no-gutter">
           <div class="col-md-6">
             <div class="icon-box">
               <h3><i class="bx bx-receipt"></i> Date</h3>
-                <h1 class="about-us-header"><strong>31st July 2023</strong></h1>
+              <h1 class="about-us-header"><strong>31st July 2023</strong></h1>
             </div>
           </div>
           <div class="col-md-6">
             <div class="icon-box">
               <h3><i class="bx bx-cube-alt"></i> Venue</h3>
-                <h1 class="about-us-header"><strong>Leela Kempemsky Hotel</strong></h1>
+              <h1 class="about-us-header"><strong>Leela Kempemsky Hotel</strong></h1>
             </div>
           </div>
         </div>
@@ -484,9 +499,12 @@
       </div>
     </section>
     <section id="contact" class="contact">
-      <div class="container">
+      <div class="container" style="background-color: #161b22;
+      border-radius: 8px;
+      border: 1px solid #30363d !important;
+      padding-top: 20px;">
         <div class="section-title">
-          <h2>Contact</h2>
+          <h1>Contact</h1>
         </div>
         <div class="row contact-info">
           <div class="col-md-4">
