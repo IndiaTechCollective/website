@@ -51,7 +51,7 @@ a {
 }
 
 a:hover {
-  color: var(--accent-hover);
+  color: var(--accent-secondary);
   text-decoration: none;
 }
 
@@ -1156,7 +1156,7 @@ section {
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: var(--accent);
+  color: var(--accent-secondary);
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -1962,3 +1962,13 @@ section {
         padding-right: 2rem;
     }
     }
+
+.sub-hero-header {
+  margin-top: -1.5rem;
+}
+
+@media (max-width: 990px) {
+  .sub-hero-header {
+    margin-top: 0;
+  }
+}
