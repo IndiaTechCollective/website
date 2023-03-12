@@ -34,11 +34,11 @@
   font-stretch: 75% 125%;
 }
 
-/* @font-face {
+@font-face {
   font-family: 'Nippo';
   font-weight: normal;
   src: url('../fonts/Nippo/Nippo-Regular.otf') format('opentype');
-} */
+}
 
 body {
   font-family: 'Mona Sans', monospace;
@@ -61,7 +61,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Nippo', sans-serif;
 }
 
 /*--------------------------------------------------------------

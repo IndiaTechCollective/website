@@ -68,9 +68,9 @@
         <div class="col-1 d-flex flex-column events-none position-relative">
           <div class="my-3 home-campaign-glowing-icon">
             <div class="position-relative d-inline-block" style="z-index: 3;">
-              <span class="position-absolute left-0 top-0" style="height: 40px; width: 40px; top: 0; left: 0; z-index: 3; margin-left: -9px;
+              <span id="lightbulb" class="position-absolute left-0 top-0" style="height: 40px; width: 40px; top: 0; left: 0; z-index: 3; margin-left: -9px;
                 margin-top: -15px;     background-image: radial-gradient(circle at center, #f7ef7d, #f3f771 10%, #fa5a4221 70%, #f8f8f800);">
-                <svg fill="#ffffff" width="100%" height="100%" viewBox="-4.93 0 122.88 122.88" version="1.1"
+                <svg fill="#ffffff" onclick="lightbulb_switch()" width="100%" height="100%" viewBox="-4.93 0 122.88 122.88" version="1.1"
                   id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   style="enable-background:new 0 0 113.01 122.88" xml:space="preserve">
                   <g>
@@ -91,8 +91,7 @@
           style="padding-top: 96px; margin-top: 128px; padding-left: 8px;">
           <div style="margin-top: 80px; margin-bottom: 48px;">
             <h1 class="sub-hero-header">Lets Build</h1>
-            <p>Harnessed for productivity. Designed for collaboration. Celebrated for built-in security. Welcome to the
-              platform developers love.</p>
+            <p>Freaky compilers, Weird AIs, Possesses Lightbulbs, Global Blockchains and Spooky Code. What else can you think of?</p>
           </div>
         </div>
       </div>
@@ -117,8 +116,7 @@
         <div class="col-11 text-left line-content-container">
           <div>
             <h1 class="sub-hero-header">Code</h1>
-            <p>Harnessed for productivity. Designed for collaboration. Celebrated for built-in security. Welcome to the
-              platform developers love.</p>
+            <p>How do you code? Or more relevantly, how quickly can you make it work when you're under pressure?</p>
           </div>
         </div>
       </div>
@@ -143,8 +141,7 @@
         <div class="col-11 text-left line-content-container">
           <div>
             <h1 class="sub-hero-header">Compete</h1>
-            <p>Harnessed for productivity. Designed for collaboration. Celebrated for built-in
-              security. Welcome to the platform developers love.</p>
+            <p>Put your skills to the test and compete to see if you can naviagte the crossroads of innovation and determination</p>
           </div>
         </div>
       </div>
@@ -169,8 +166,7 @@
         <div class="col-11 text-left line-content-container">
           <div>
             <h1 class="sub-hero-header">Collaborate</h1>
-            <p>Harnessed for productivity. Designed for collaboration. Celebrated for built-in
-              security. Welcome to the platform developers love.</p>
+            <p>Collaborate with like-minded individuals and turn your collective brilliance into game-changing solutions</p>
           </div>
         </div>
       </div>
@@ -190,9 +186,7 @@
           <div class="col-md-9 d-flex align-items-stretch">
             <div class="content d-flex flex-column justify-content-center">
               <p class="about-us-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis justo nec tellus tincidunt, eu
-                hendrerit tortor ullamcorper. Integer ut mattis orci. Donec arcu est, blandit auctor dolor in, rhoncus
-                maximus magna. Vestibulum pulvinar aliquam venenatis. Nunc sollicitudin laoreet rutrum.
+                We're the IndicTechCollective, a bunch of technology oriented individuals who wish to build a community of all types of hackers. For the most part, we're technology enthusiasts from all stripes of life, united by a desire to build and break things. 
               </p>
               <!-- <div class="row">
                 
@@ -207,14 +201,15 @@
         </div>
       </div>
     </section>
-    <section style="background-image: url(img/pl_strip.jpg);
+    <section style="height: 52.5vh; background-image: url(img/pl_strip.jpg);
     background-color: #10101082;
     background-blend-mode: multiply;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;">
-      <marquee behavior="scroll" direction="left" scrollamount="20">
+      <div id="text_bg_img" style="display:none ; width: 2vw ; height: 2vh; text-align:center">Hello. Why not have a a look at this image? Also, a question. Know what a zip code is?</div>
+      <!-- <marquee behavior="scroll" direction="left" scrollamount="20">
         <div class="d-flex align-items-stretch">
           <div class="content d-flex flex-row justify-content-center">
             <h3 class="about-us-header" style="color: white;margin-right: 5%;"><em>Be There!</em></h3>
@@ -222,7 +217,7 @@
             <h3 class="about-us-header" style="color: white;"><em>Leela Kempemsky Hotel</em></h3>
           </div>
         </div>
-      </marquee>
+      </marquee> -->
     </section>
     <section id="be-there" class="about py-4 pt-5">
       <div class="container">
@@ -230,13 +225,13 @@
           <div class="col-md-6">
             <div class="icon-box">
               <h3><i class="bx bx-receipt"></i> Date</h3>
-              <h1 class="about-us-header"><strong>31<sup>st</sup> July <br> 2023</strong></h1>
+              <h1 class="about-us-header"><strong>29<sup>th</sup> April <br> 2023</strong></h1>
             </div>
           </div>
           <div class="col-md-6">
             <div class="icon-box">
               <h3><i class="bx bx-cube-alt"></i> Venue</h3>
-              <h1 class="about-us-header"><strong>Leela Kempemsky Hotel</strong></h1>
+              <h1 class="about-us-header"><strong>The Oberoi</strong></h1>
             </div>
           </div>
         </div>
@@ -514,21 +509,21 @@
             <div class="contact-address">
               <i class="bi bi-twitter"></i>
               <h3>Twitter</h3>
-              <a>@Hackathon</a>
+              <a>@IndicTechCollective</a>
             </div>
           </div>
           <div class="col-md-4">
             <div class="contact-phone">
               <i class="bi bi-discord"></i>
               <h3>Discord</h3>
-              <a href="">discord.gg</a>
+              <a href="">discord.gg/indiatech</a>
             </div>
           </div>
           <div class="col-md-4">
             <div class="contact-email">
               <i class="bi bi-envelope"></i>
               <h3>Email</h3>
-              <p><a href="mailto:info@example.com">info@example.com</a></p>
+              <p><a href="mailto:info@example.com">indiatechcollective@gmail.com</a></p>
             </div>
           </div>
         </div>
@@ -545,6 +540,35 @@
   <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="vendor/swiper/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    function lightbulb_switch() {
+      let original_color = "radial-gradient(circle at center center, rgb(247, 239, 125), rgb(243, 247, 113) 10%, rgba(250, 90, 66, 0.13) 70%, rgba(248, 248, 248, 0))"
+      
+      if (localStorage.getItem('flag')) {
+        let x = localStorage.getItem('flag');
+        localStorage.setItem('flag' , 1+(+x));
+        if((1+(+x))%6 == 0){
+          original_color = "radial-gradient(circle at center center, rgb(167, 19, 236), rgb(167, 19, 236) 10%, rgba(250, 0, 200, 0.13) 70%, rgba(248, 0, 210, 0))";
+
+          document.getElementById('text_bg_img').style.display = "block";
+        }
+        else {
+          document.getElementById('text_bg_img').style.display = "none";
+        }
+      }
+      else {
+        localStorage.setItem('flag' , +1)
+      }
+
+      let color = document.getElementById("lightbulb").style.backgroundImage;
+      // none error likely
+      if(color==original_color){
+        document.getElementById("lightbulb").style.backgroundImage = "none";
+      } else {  
+        document.getElementById("lightbulb").style.backgroundImage = original_color;
+      }
+    }
+  </script>
 
 </body>
 
