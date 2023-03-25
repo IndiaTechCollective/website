@@ -46,7 +46,7 @@ body {
 }
 
 a {
-  color: var(--accent);
+  color: var(--accent-secondary);
   text-decoration: none;
 }
 
